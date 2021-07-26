@@ -7,8 +7,12 @@
         Todos os direitos reservados aos recrutadores ❤
       </p>
       <div class="container-redesSociais">
-        <i class="lab la-github"><a href="#"></a></i>
-        <i class="lab la-linkedin-in"><a href="#"></a></i>
+        <a href="https://github.com/RafaelCardoso11/project-cnpj-vuejs" target="_blank">
+          <i class="lab la-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rafaelcardoso11/" target="_blank">
+          <i class="lab la-linkedin-in"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -35,14 +39,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-   padding: 25px;
+  padding: 25px;
 }
 .container-copyright .copyright {
   font-size: 10rem;
   text-align: center;
- 
 }
 .container-copyright .container-redesSociais i {
   font-size: 25rem;
+  color: white;
 }
 </style>

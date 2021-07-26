@@ -25,15 +25,30 @@
       <p class="description-query">
         Sua empresa aínda não possui CNPJ?
         <strong>
-          <a href="">Crie um agora</a>
+          <router-link to="/registrar">Crie um agora</router-link>
         </strong>
         mesmo conosco.
       </p>
     </footer>
+    <div class="backgroud-next-y"></div>
   </section>
+  
 </template>
 
 <style>
+.backgroud-next-y {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+
+ 
+  background-color: #0099ff;
+  animation: showTelaHome-x 2s ease-in-out forwards alternate;
+}
 .container-QueryPage {
   width: 100%;
   display: flex;
@@ -41,7 +56,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
+  padding: 50px;
 }
 .title-query {
   font-size: 25rem;
@@ -59,6 +74,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
 .container-query .btn-search {
   background-color: #0f3e5e;
@@ -112,5 +128,15 @@
 }
 .description-query strong:hover {
   text-decoration: underline;
+}
+@keyframes showTelaHome-x {
+  from {
+    opacity: 1;
+    transform: translate(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-100%);
+  }
 }
 </style>

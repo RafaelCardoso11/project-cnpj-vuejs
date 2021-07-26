@@ -2,16 +2,15 @@
   <header class="header">
     <nav class="container-nav">
       <div class="container-logo">
-        <a href="">
-          <img class="logo" src="../../assets/logo.png" alt="logo"
-        /></a>
+        <router-link to="/inicio">
+          <img class="logo" src="../../assets/logo.png" alt="logo" />
+        </router-link>
         <p>
           Consultation and analysis
         </p>
-        
       </div>
       <ul class="ul-nav">
-        <a href="">
+        <router-link to="/registrar">
           <li class="items-list border-normal">
             <img
               src="../../assets/home.png"
@@ -20,9 +19,8 @@
             />
             Registrar CNPJ
           </li>
-        </a>
-
-        <a href="">
+        </router-link>
+        <router-link to="/consulta">
           <li class="items-list borderBlue">
             <img
               src="../../assets/home.png"
@@ -31,7 +29,7 @@
             />
             Home
           </li>
-        </a>
+        </router-link>
       </ul>
     </nav>
   </header>
@@ -69,13 +67,12 @@
   color: #000000;
 
   padding: 10px 0px;
- 
 }
-.container-nav .items-list:hover{
+.container-nav .items-list:hover {
   opacity: 0.6;
 }
-.border-normal{
-   border-bottom: 3px solid rgba(0, 153, 255, 0.21);
+.border-normal {
+  border-bottom: 3px solid rgba(0, 153, 255, 0.21);
 }
 .borderBlue {
   border-bottom: 2px solid #0099ff;

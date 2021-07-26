@@ -63,6 +63,8 @@
 <style>
 .container-historic {
   width: 100%;
+  padding: 40px 0px;
+  margin-bottom: 30px;
 }
 .container-historic .content-historic {
   max-width: 800px;

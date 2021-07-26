@@ -25,21 +25,31 @@
         <img src="../../assets/Vector-footer-c1.png" class="vectorFooter-c1" />
         <img src="../../assets/Vector-footer-c2.png" class="vectorFooter-c2" />
       </div>
-        <img src="../../assets/roaming.png" alt="" class="load-img">
-        <p class="copy-content">
-           Todos os direitos reservados aos recrutadores ❤
-        </p>
+      <img src="../../assets/roaming.png" alt="" class="load-img" />
+      <p class="copy-content">
+        Todos os direitos reservados aos recrutadores ❤
+      </p>
     </footer>
-     <div class="backgroud-next"></div>
+    <div class="backgroud-next"></div>
   </section>
-  
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  mounted: function (){
+    setTimeout(() => {
+      this.$router.push('consulta'); 
+    }, 8000);
+  }
+})
+</script>
+
 <style>
 .pageInit {
   width: 100%;
-  
 }
-.backgroud-next{
+.backgroud-next {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -49,7 +59,7 @@
   opacity: 0;
 
   transform: translateX(-100%);
-  background-color: #0099FF;
+  background-color: #0099ff;
   animation: showTelaHome 4s 4s ease-in-out forwards alternate;
 }
 .content-main .vectorBG-c1 {
@@ -100,24 +110,24 @@
   z-index: 2;
   bottom: 0;
 }
-.content-footer .load-img{
+.content-footer .load-img {
   position: absolute;
   z-index: 3;
   width: 50px;
   right: 40px;
   animation: rotateRoaming 6s forwards;
 }
-.content-footer .copy-content{
+.content-footer .copy-content {
   position: absolute;
   bottom: 20px;
   color: white;
   z-index: 3;
   left: calc(50% - 140px);
   font-size: 7rem;
-   text-align: center;
+  text-align: center;
 }
 @keyframes rotateRoaming {
-  to{
+  to {
     opacity: 0;
     transform: rotate(180deg);
   }
@@ -135,18 +145,18 @@
     opacity: 0;
     transform: translateY(-80%);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes showTelaHome {
-   from{
+  from {
     opacity: 0;
     transform: translate(-100%);
   }
-  to{
+  to {
     opacity: 1;
     transform: translate(0);
   }

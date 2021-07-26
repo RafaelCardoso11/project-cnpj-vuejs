@@ -2,16 +2,18 @@
   <app-view>
     <headerContainer />
     <router-view></router-view>
+    <footerContainer />
   </app-view>
 </template>
 
 <script>
 import headerContainer from "./components/templates/headerContainer.vue";
-
+import footerContainer from "./components/templates/footerContainer.vue"
 export default {
   name: "App",
   components: {
-    headerContainer
+    headerContainer,
+    footerContainer
   },
 };
 </script>

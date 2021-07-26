@@ -5,6 +5,7 @@ import initPageLoading from './components/views/initPageLoading.vue'
 import queryPage from './components/views/queryPage.vue'
 import resultQuery from  './components/views/resultQuery.vue'
 import historicQueryPage from './components/views/historicQueryPage.vue';
+import registerNewCnpj from './components/views/registerNewCnpj.vue'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
@@ -26,6 +27,10 @@ const router = new VueRouter({
     {
       path: "/consulta/historico",
       component: historicQueryPage
+    },
+    {
+      path: "/registrar",
+      component: registerNewCnpj
     },
     {
       path: "/",
