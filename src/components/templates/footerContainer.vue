@@ -7,7 +7,10 @@
         Todos os direitos reservados aos recrutadores ❤
       </p>
       <div class="container-redesSociais">
-        <a href="https://github.com/RafaelCardoso11/project-cnpj-vuejs" target="_blank">
+        <a
+          href="https://github.com/RafaelCardoso11/project-cnpj-vuejs"
+          target="_blank"
+        >
           <i class="lab la-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/rafaelcardoso11/" target="_blank">
@@ -28,6 +31,10 @@
   position: absolute;
   z-index: 1;
   bottom: 20px;
+  min-width: 100vw;
+}
+.container-footer .vetor2 {
+  min-width: 100vw;
 }
 .container-footer .container-copyright {
   position: absolute;
@@ -48,5 +55,13 @@
 .container-copyright .container-redesSociais i {
   font-size: 25rem;
   color: white;
+}
+@media (min-height: 836px) {
+  .container-footer .vetor1 {
+    min-height: 100vh;
+  }
+  .container-footer .vetor2 {
+    min-height: 100vh;
+  }
 }
 </style>

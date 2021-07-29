@@ -93,4 +93,21 @@
   width: 50px;
   margin-right: 15px;
 }
+
+@media (max-width: 750px) {
+  .header .container-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .container-nav .ul-nav {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .header .container-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
 </style>

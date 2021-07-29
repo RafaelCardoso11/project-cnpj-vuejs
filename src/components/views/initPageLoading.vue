@@ -193,7 +193,73 @@ export default Vue.extend({
     font-size: 9rem;
   }
 }
+
 @media (max-width: 550px) {
+  .content-main .vectorBG-c1 {
+    position: relative;
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 130px;
+    z-index: 1;
+  }
+  .content-main .vectorBG-c2 {
+    position: absolute;
+    bottom: calc(50% - 70px);
+    width: 260px;
+    left: calc(50% - 120px);
+  }
+  .content-main .img-carousel {
+    position: absolute;
+    bottom: calc(50% + 30px);
+    left: calc(50% - 15px);
+    width: 30px;
+    animation: searchLoop 3s ease-in-out infinite alternate-reverse;
+  }
+  .content-main .content-description {
+    position: absolute;
+    bottom: calc(50% - 25px);
+    left: calc(50% - 95px);
+    width: 200px;
+    color: #584f4f;
+    text-align: center;
+    font-size: 6rem;
+  }
+}
+
+@media (max-height: 620px) {
+  .content-main .vectorBG-c1 {
+    position: relative;
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+    z-index: 1;
+  }
+  .content-main .vectorBG-c2 {
+    position: absolute;
+    bottom: calc(50% - 140px);
+    width: 400px;
+    left: calc(50% - 200px);
+  }
+  .content-main .img-carousel {
+    position: absolute;
+    bottom: calc(50% + 30px);
+    left: calc(50% - 15px);
+    width: 50px;
+    animation: searchLoop 3s ease-in-out infinite alternate-reverse;
+  }
+  .content-main .content-description {
+    position: absolute;
+    bottom: calc(50% - 50px);
+    left: calc(50% - 145px);
+    width: 300px;
+    color: #584f4f;
+    text-align: center;
+    font-size: 9rem;
+  }
+}
+@media (max-height: 550px) {
   .content-main .vectorBG-c1 {
     position: relative;
     display: flex;

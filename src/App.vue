@@ -2,20 +2,18 @@
   <app-view>
     <headerContainer />
     <router-view></router-view>
-    <footerContainer />
   </app-view>
 </template>
 
 <script>
 import headerContainer from "./components/templates/headerContainer.vue";
-import footerContainer from "./components/templates/footerContainer.vue"
 export default {
   name: "App",
   components: {
-    headerContainer,
-    footerContainer
+    headerContainer
   },
 };
+
 </script>
 
 <style>
@@ -57,5 +55,30 @@ input[type=number]::-webkit-outer-spin-button {
 button{
   outline: none;
   border: none;
+}
+@media (max-width:750px){
+  html{
+    font-size: 9%;
+  }
+}
+@media (max-width:800px){
+  html{
+    font-size: 8.5%;
+  }
+}
+@media (max-width:600px){
+  html{
+    font-size: 8%;
+  }
+}
+@media (max-width:500px){
+  html{
+    font-size: 7%;
+  }
+}
+@media (max-width:300px){
+  html{
+    font-size: 5.5%;
+  }
 }
 </style>
