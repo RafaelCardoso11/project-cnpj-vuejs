@@ -13,7 +13,7 @@
         <router-link to="/registrar">
           <li class="items-list border-normal">
             <img
-              src="../../assets/home.png"
+              src="../../assets/icon-register.png"
               alt=""
               class="icon-item margin-right-10px"
             />
