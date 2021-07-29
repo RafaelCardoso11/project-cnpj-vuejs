@@ -21,7 +21,7 @@
           </li>
         </router-link>
         <router-link to="/consulta">
-          <li class="items-list borderBlue">
+          <li class="items-list border-normal">
             <img
               src="../../assets/home.png"
               alt="inicio"
@@ -68,8 +68,10 @@
 
   padding: 10px 0px;
 }
+
 .container-nav .items-list:hover {
   opacity: 0.6;
+  border-bottom: 2px solid #0099ff;
 }
 .border-normal {
   border-bottom: 3px solid rgba(0, 153, 255, 0.21);

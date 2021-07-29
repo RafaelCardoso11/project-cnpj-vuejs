@@ -181,8 +181,8 @@ export default {
   border-radius: 5px;
 }
 .content-query.notice {
-  border: 2px solid #0099ff;
-  box-shadow: 0px 0px 3px #0099ff;
+  border: 4px solid #f54b4b;
+  
 }
 .content-query > i {
   padding-left: 10px;
