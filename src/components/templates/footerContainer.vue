@@ -56,7 +56,7 @@
   font-size: 25rem;
   color: white;
 }
-@media (min-height: 836px) {
+@media (min-height: 810px) {
   .container-footer .vetor1 {
     min-height: 100vh;
   }
