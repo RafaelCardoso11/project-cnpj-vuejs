@@ -181,7 +181,7 @@ export default {
   border-radius: 5px;
 }
 .content-query.notice {
-  border: 4px solid #f54b4b;
+  border: 2px solid #f54b4b;
   
 }
 .content-query > i {
